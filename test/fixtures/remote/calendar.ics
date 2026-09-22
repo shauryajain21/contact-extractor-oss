@@ -1,0 +1,100 @@
+BEGIN:VCALENDAR
+PRODID:-//Synthetic//worklog tests//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+X-WR-TIMEZONE:Europe/Paris
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:STANDARD
+DTSTART:19701025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:utc-kickoff@synthetic.example
+DTSTART:20240304T090000Z
+DTEND:20240304T093000Z
+SUMMARY:Kickoff with Acme
+LOCATION:Video call
+DESCRIPTION:Agenda: review Q1 numbers and the
+  partnership pipeline\nSecond line\, with comma
+ORGANIZER;CN=Alex Rivera:mailto:alex@mycorp.example
+ATTENDEE;CN="Doe: Jane";PARTSTAT=ACCEPTED;ROLE=REQ-PARTICIPANT:mailto:jane@acme.example
+ATTENDEE;CN=Alex Rivera;PARTSTAT=ACCEPTED:mailto:alex@mycorp.example
+ATTENDEE;CUTYPE=RESOURCE;CN=Room 4;PARTSTAT=ACCEPTED:mailto:room4@resource.calendar.google.com
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H10M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:paris-lunch@synthetic.example
+DTSTART;TZID=Europe/Paris:20240304T150000
+DTEND;TZID=Europe/Paris:20240304T160000
+SUMMARY:Partner sync (Paris)
+ORGANIZER;CN=Jane Doe:mailto:jane@acme.example
+ATTENDEE;CN=Alex Rivera;PARTSTAT=NEEDS-ACTION:mailto:alex@mycorp.example
+DESCRIPTION:Notes<br>Bring the deck\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.example/abc-defg-hij\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+END:VEVENT
+BEGIN:VEVENT
+UID:offsite@synthetic.example
+DTSTART;VALUE=DATE:20240305
+DTEND;VALUE=DATE:20240307
+SUMMARY:Team offsite
+END:VEVENT
+BEGIN:VEVENT
+UID:standup@synthetic.example
+DTSTART;TZID=America/New_York:20240108T100000
+DTEND;TZID=America/New_York:20240108T101500
+RRULE:FREQ=WEEKLY;BYDAY=MO,WE;UNTIL=20240331T235959Z
+EXDATE;TZID=America/New_York:20240311T100000
+SUMMARY:Standup
+ORGANIZER;CN=Sam Lee:mailto:sam@mycorp.example
+ATTENDEE;CN=Alex Rivera;PARTSTAT=ACCEPTED:mailto:alex@mycorp.example
+END:VEVENT
+BEGIN:VEVENT
+UID:standup@synthetic.example
+RECURRENCE-ID;TZID=America/New_York:20240306T100000
+DTSTART;TZID=America/New_York:20240306T113000
+DTEND;TZID=America/New_York:20240306T114500
+SUMMARY:Standup (moved)
+ORGANIZER;CN=Sam Lee:mailto:sam@mycorp.example
+END:VEVENT
+BEGIN:VEVENT
+UID:daily-count@synthetic.example
+DTSTART:20240301T080000Z
+DTEND:20240301T081500Z
+RRULE:FREQ=DAILY;COUNT=5
+SUMMARY:Morning review
+END:VEVENT
+BEGIN:VEVENT
+UID:cancelled@synthetic.example
+DTSTART:20240304T120000Z
+DTEND:20240304T130000Z
+SUMMARY:Cancelled lunch
+STATUS:CANCELLED
+END:VEVENT
+BEGIN:VEVENT
+UID:declined@synthetic.example
+DTSTART:20240304T170000Z
+DTEND:20240304T180000Z
+SUMMARY:Vendor pitch
+ORGANIZER;CN=Pat Vendor:mailto:pat@vendor.example
+ATTENDEE;CN=Alex Rivera;PARTSTAT=DECLINED:mailto:alex@mycorp.example
+END:VEVENT
+BEGIN:VEVENT
+UID:windows-tz@synthetic.example
+DTSTART;TZID=Romance Standard Time:20240305T100000
+DTEND;TZID=Romance Standard Time:20240305T110000
+SUMMARY:Outlook-exported meeting
+END:VEVENT
+BEGIN:VEVENT
+UID:old@synthetic.example
+DTSTART:20240201T090000Z
+DTEND:20240201T100000Z
+SUMMARY:Outside the window
+END:VEVENT
+END:VCALENDAR

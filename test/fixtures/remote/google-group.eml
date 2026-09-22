@@ -1,0 +1,31 @@
+Return-Path: <contact+bncBAAAA@mycorp.example>
+From: "'Jane Doe' via Contact" <contact@mycorp.example>
+Reply-To: Jane Doe <jane@acme.example>
+X-Original-From: Jane Doe <jane@acme.example>
+X-Original-Sender: jane@acme.example
+To: Contact <contact@mycorp.example>
+Subject: Interested in a partnership
+Date: Mon, 04 Mar 2024 09:00:00 +0000
+Message-ID: <CAF1root@mail.acme.example>
+List-ID: <contact.mycorp.example>
+Precedence: list
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="b1"
+
+--b1
+Content-Type: text/plain; charset="UTF-8"
+
+Hi team,
+
+We run a logistics platform and would love to explore an integration.
+
+Best,
+Jane
+--
+Jane Doe | Head of Partnerships | Acme
+
+--b1
+Content-Type: text/html; charset="UTF-8"
+
+<p>Hi team,</p><p>We run a logistics platform and would love to explore an integration.</p>
+--b1--

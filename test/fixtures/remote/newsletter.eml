@@ -1,0 +1,11 @@
+From: Vendor Weekly <no-reply@vendor.example>
+To: alex@mycorp.example
+Subject: Your weekly digest
+Date: Mon, 04 Mar 2024 12:00:00 +0000
+Message-ID: <digest-42@vendor.example>
+List-Unsubscribe: <mailto:unsubscribe@vendor.example>,
+ <https://vendor.example/unsubscribe?u=1>
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+
+<html><body><h1>This week</h1><p>Three new features shipped.</p></body></html>

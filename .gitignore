@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+.env.*
+*.log
+worklog.config.json
+.worklog/
+.DS_Store

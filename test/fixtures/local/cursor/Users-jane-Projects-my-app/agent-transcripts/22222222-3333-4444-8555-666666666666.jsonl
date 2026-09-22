@@ -1,0 +1,2 @@
+{"role":"user","message":{"content":[{"type":"text","text":"<user_query>\nFlat layout chat without timestamps\n</user_query>"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"Handled the flat layout."}]}}

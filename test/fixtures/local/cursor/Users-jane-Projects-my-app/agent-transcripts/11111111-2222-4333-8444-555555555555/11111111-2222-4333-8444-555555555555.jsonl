@@ -1,0 +1,12 @@
+{"role":"user","message":{"content":[{"type":"text","text":"<timestamp>Friday, Sep 4, 2026, 9:05 AM (UTC-4)</timestamp>\n<user_query>\nSet up the project skeleton\n</user_query>"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"Skeleton ready."}]}}
+{"type":"turn_ended","status":"success"}
+{"role":"user","message":{"content":[{"type":"text","text":"<timestamp>Friday, Sep 4, 2026, 12:26 PM (UTC-4)</timestamp>\n<attached_files>\n<file path=\"/tmp/example.ts\">const x = 1;</file>\n</attached_files>\n<image_files>\nscreenshot-1.png\n</image_files>\n<user_query>\nWire the billing webhook, my key is sk-proj-FAKEfakeFAKEfake1234567890abcd\n</user_query>"}]}}
+{"role":"assistant","message":{"content":[{"type":"tool_use","name":"Read","input":{"path":"/tmp/example.ts"}}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"Webhook wired."},{"type":"tool_use","name":"Write","input":{}}]}}
+this line is not json {
+{"role":"user","message":{"content":[{"type":"text","text":"<timestamp>Friday, Sep 4, 2026, 12:40 PM (UTC-4)</timestamp>\n<system_reminder>\nInternal harness note that must not leak.\n</system_reminder>\n<user_query>\nAdd retries to the webhook handler\n</user_query>"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"Retries added with exponential backoff."}]}}
+{"type":"turn_ended","status":"success"}
+{"role":"user","message":{"content":[{"type":"text","text":"<timestamp>Friday, Sep 4, 2026, 6:10 PM (UTC-4)</timestamp>\n<user_query>\nWrite the README\n</user_query>"}]}}
+{"role":"assistant","message":{"content":[{"type":"text","text":"README written."}]}}

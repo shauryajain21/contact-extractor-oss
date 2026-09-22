@@ -1,0 +1,43 @@
+{
+  "vault": "~/Documents/Obsidian Vault",
+  "me": {
+    "name": "Ada Lovelace",
+    "emails": ["ada@example.com", "ada.lovelace@gmail.com"],
+    "domains": ["example.com"],
+    "slackUserId": "U0123456789"
+  },
+  "timezone": "Europe/London",
+  "llm": {
+    "provider": "openai",
+    "model": "gpt-4.1-mini",
+    "apiKeyEnv": "OPENAI_API_KEY"
+  },
+  "sources": {
+    "cursor": { "enabled": true, "path": "~/.cursor/projects" },
+    "claudeCode": { "enabled": true, "path": "~/.claude/projects" },
+    "git": { "enabled": true, "roots": ["~/Projects"], "maxDepth": 2 },
+    "slack": {
+      "enabled": true,
+      "tokenEnv": "SLACK_USER_TOKEN",
+      "workspaceUrl": "https://example.slack.com"
+    },
+    "imap": {
+      "enabled": true,
+      "host": "imap.gmail.com",
+      "port": 993,
+      "secure": true,
+      "user": "ada@example.com",
+      "passwordEnv": "IMAP_PASSWORD",
+      "mailboxes": ["INBOX"]
+    },
+    "calendar": {
+      "enabled": true,
+      "icsUrls": ["https://calendar.google.com/calendar/ical/.../basic.ics"]
+    }
+  },
+  "filters": {
+    "dropCategories": ["spam", "newsletter", "hiring"],
+    "ignoreDomains": ["github.com", "linear.app"]
+  },
+  "schedule": { "times": ["08:00", "12:00", "16:00", "20:00"] }
+}
