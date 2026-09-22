@@ -35,7 +35,7 @@ worklog run --since 1d             # write it
 worklog schedule install    # 8am, 12pm, 4pm, 8pm, with catch-up after sleep
 ```
 
-Needs Node 20 or newer.
+Needs Node 22 or newer.
 
 ## Sources
 

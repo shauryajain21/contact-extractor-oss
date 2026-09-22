@@ -381,8 +381,8 @@ function cmdDoctor(g: Global, io: Io): number {
   };
 
   const major = Number(process.versions.node.split(".")[0]);
-  if (major >= 20) ok(`node ${process.versions.node}`);
-  else fail(`node ${process.versions.node} is too old; worklog needs 20+`);
+  if (major >= 22) ok(`node ${process.versions.node}`);
+  else fail(`node ${process.versions.node} is too old; worklog needs 22+`);
 
   if (!existsSync(g.configPath)) {
     fail(`no config at ${g.configPath}; run \`worklog init\``);
